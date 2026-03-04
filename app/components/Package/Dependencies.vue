@@ -280,7 +280,7 @@ const numberFormatter = useNumberFormatter()
           :key="dep"
           class="flex items-center justify-between py-1 text-sm gap-2"
         >
-          <LinkBase :to="packageRoute(dep)" class="block truncate" dir="ltr">
+          <LinkBase :to="packageRoute(dep)" class="block truncate" :title="dep" dir="ltr">
             {{ dep }}
           </LinkBase>
           <LinkBase
